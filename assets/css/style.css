@@ -61,18 +61,11 @@ a {
   white-space: nowrap;
 }
 
-.logo-mark {
-  width: 22px;
-  height: 22px;
-  border: 1px solid var(--accent);
-  position: relative;
-}
-
-.logo-mark::before {
-  content: "";
-  position: absolute;
-  inset: 4px;
-  border: 1px solid var(--accent);
+.logo-img {
+  height: 34px;
+  width: auto;
+  display: block;
+  object-fit: contain;
 }
 
 .site-nav {
@@ -407,8 +400,8 @@ section > * {
     padding: 0 6vw;
   }
 
-  .logo-text {
-    font-size: 16px;
+  .logo-img {
+    height: 30px;
   }
 
   .hero {
