@@ -2,6 +2,7 @@
   const prefersReduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   const revealSections = document.querySelectorAll("[data-reveal]");
   const navLinks = document.querySelectorAll(".site-nav a");
+  const menuToggle = document.querySelector(".menu-toggle");
 
   revealSections.forEach((section) => {
     const staggerEls = section.querySelectorAll("[data-stagger]");
@@ -50,6 +51,27 @@
     );
 
     document.querySelectorAll("[data-section]").forEach((section) => navObserver.observe(section));
+  }
+
+  if (menuToggle) {
+    menuToggle.addEventListener("click", () => {
+      const isOpen = document.body.classList.toggle("menu-open");
+      menuToggle.setAttribute("aria-expanded", String(isOpen));
+    });
+
+    navLinks.forEach((link) => {
+      link.addEventListener("click", () => {
+        document.body.classList.remove("menu-open");
+        menuToggle.setAttribute("aria-expanded", "false");
+      });
+    });
+
+    document.addEventListener("keydown", (event) => {
+      if (event.key === "Escape") {
+        document.body.classList.remove("menu-open");
+        menuToggle.setAttribute("aria-expanded", "false");
+      }
+    });
   }
 
   const eqCanvas = document.getElementById("eq-canvas");
