@@ -118,8 +118,8 @@
       canvas.style.height = `${height}px`;
       ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
 
-      const count = Math.max(20, Math.min(40, Math.floor(width / 26)));
-      barWidth = Math.max(3, Math.floor(width / (count * 5)));
+      const count = Math.max(40, Math.min(80, Math.floor(width / 13)));
+      barWidth = Math.max(4, Math.floor(width / (count * 4)));
       gap = Math.max(4, Math.floor((width - count * barWidth) / (count + 1)));
       startX = gap;
 

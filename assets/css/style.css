@@ -6,7 +6,7 @@
   --accent: #d90429;
   --eq-color: rgba(244, 244, 244, 0.55);
   --header-height: 76px;
-  --eq-height: 100px;
+  --eq-height: 52px;
   --container: min(1120px, 100% - 10vw);
   --radius: 18px;
   --noise-url: url("../img/ruidobg.avif");
@@ -62,7 +62,7 @@ a {
 }
 
 .logo-img {
-  height: 34px;
+  height: 40px;
   width: auto;
   display: block;
   object-fit: contain;
@@ -84,17 +84,17 @@ a {
   display: none;
   background: transparent;
   border: 0;
-  padding: 8px;
+  padding: 10px;
   cursor: pointer;
   margin-left: auto;
 }
 
 .menu-toggle span {
   display: block;
-  width: 24px;
-  height: 2px;
+  width: 26px;
+  height: 3px;
   background: rgba(244, 244, 244, 0.8);
-  margin: 5px 0;
+  margin: 4px 0;
   transition: transform 0.2s ease, opacity 0.2s ease, background 0.2s ease;
 }
 
@@ -411,7 +411,7 @@ section > * {
 @media (max-width: 900px) {
   :root {
     --header-height: 84px;
-    --eq-height: 88px;
+    --eq-height: 46px;
   }
 
   .site-header {
@@ -448,7 +448,7 @@ section > * {
   }
 
   .logo-img {
-    height: 30px;
+    height: 34px;
   }
 
   .hero {
