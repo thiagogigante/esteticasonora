@@ -87,6 +87,10 @@ a {
   padding: 10px;
   cursor: pointer;
   margin-left: auto;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5px;
 }
 
 .menu-toggle span {
@@ -94,7 +98,7 @@ a {
   width: 26px;
   height: 3px;
   background: rgba(244, 244, 244, 0.8);
-  margin: 4px 0;
+  margin: 0;
   transition: transform 0.2s ease, opacity 0.2s ease, background 0.2s ease;
 }
 
