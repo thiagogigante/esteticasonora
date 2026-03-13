@@ -187,7 +187,8 @@
         target = Math.min(maxCap, target);
         bar.value += (target - bar.value) * 0.08;
         const h = Math.max(8, Math.min(maxCap, bar.value));
-        ctx.fillRect(x, height - h, barWidth, h);
+        const y = (height - h) / 2;
+        ctx.fillRect(x, y, barWidth, h);
       });
 
       requestAnimationFrame(animate);
