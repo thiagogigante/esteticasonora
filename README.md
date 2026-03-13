@@ -10,7 +10,7 @@ Site institucional estatico para a Estetica Sonora Producoes.
 
 ## Ajustes rapidos
 - Substitua o numero do WhatsApp em index.html (3 ocorrencias de https://wa.me/5521971168104).
-- Coloque o wallpaper de ruido em assets/img/ruidoBG.avif.
+- Coloque o wallpaper de ruido em assets/img/ruidobg.avif.
 - Substitua textos, projetos, clientes e a galeria conforme o material final.
 - Troque o logo (atualmente texto).
 

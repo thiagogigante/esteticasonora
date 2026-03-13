@@ -9,7 +9,7 @@
   --eq-height: 100px;
   --container: min(1120px, 100% - 10vw);
   --radius: 18px;
-  --noise-url: url("../img/ruidoBG.avif");
+  --noise-url: url("../img/ruidobg.avif");
 }
 
 * {
