@@ -167,8 +167,7 @@
       const scrollMax = height * 0.7;
       const maxCap = height - 6;
       const mouseRadius = Math.max(120, width * 0.15);
-      const mouseInfluenceY =
-        state.mouseActive && state.mouseY >= layerTop - 80 && state.mouseY <= layerBottom + 80 ? 1 : 0;
+      const mouseInfluenceY = state.mouseActive ? 1 : 0;
 
       bars.forEach((bar, index) => {
         const x = startX + index * (barWidth + gap);
